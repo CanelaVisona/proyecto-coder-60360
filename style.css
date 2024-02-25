@@ -1,0 +1,46 @@
+
+
+
+.titulos {
+    color: red;
+    font-size: 2rem;
+    font-style: italic;
+    font-family: 'Merriweather', serif;
+}
+
+header ul {
+
+    list-style: none;
+}
+
+.portada {
+
+    background-color: blue;
+    height: 800px;
+    background: url(img/foto\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+
+
+}
+
+img {
+
+    width: 70px;
+}
+
+.casamiento {
+color: violet;
+background-color: aliceblue;
+
+}
+
+.grid-container {
+display: grid;
+grid-template-columns: auto auto auto auto;
+grid-template-rows: repeat(3, 100px) ;
+row-gap: 10px;
+column-gap: 10px;
+}
