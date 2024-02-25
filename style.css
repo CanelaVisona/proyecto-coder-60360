@@ -37,10 +37,23 @@ background-color: aliceblue;
 
 }
 
-.grid-container {
-display: grid;
-grid-template-columns: auto auto auto auto;
-grid-template-rows: repeat(3, 100px) ;
-row-gap: 10px;
-column-gap: 10px;
+.titulo-cursos
+{
+    text-align: center;
+    font-family: sans-serif;
+    color: orange;
+    font-size: 4rem;
 }
+
+.título-ejercicios
+{
+    text-align: center;
+    font-family: sans-serif;
+    color: orange;
+    font-size: 4rem;
+}
+
+.carrusel-card { 
+    display: flex;
+}
+
