@@ -1,91 +1,137 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="../style.css">
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <h1>Productos</h1>
-    <header>
-              
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-          <div class="container-fluid">
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-              <div class="navbar-nav">
-                <a class="nav-link active" aria-current="page" href="../index.HTML">Inicio</a>
-               
-              </div>
-            </div>
-          </div>
-        </nav>
-    
-  </header>
-    <div id="carouselExample" class="carousel slide">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="carrusel-card"></div>
-            <div class="card" style="width: 18rem;">
-                <img src="../img/Pronombres personales-graficos.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carrusel-card">
-                <div class="card" style="width: 18rem;">
-                    <img src="../img/Pronombres personales-graficos.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <div class="carrusel-card"><div class="card" style="width: 18rem;">
-                <img src="../img/Pronombres personales-graficos.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="../CSS/styles.css">
+  <title>Tu Página Web</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body>
+
+  <header>
+
+    <nav class="navbar navbar-expand-lg  bg-custom">
+      <div class="container-fluid">
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="../index.HTML">Inicio</a>
+            <a class="nav-link" href="cursos.html">Cursos</a>
+            <a class="nav-link" href="Ejercicios.html">Ejercicios</a>
+            <a class="nav-link" href="Productos.html">Productos</a>
+            <a class="nav-link" href="Contactanos.html">Contactanos</a>
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
       </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
-</html>
+    </nav>
 
+  </header>
+  <h1 class="titulo-cursos  ">Productos</h1>
+
+  <!-- tarjetas -->
+
+  <div class="container-productos">
+    <div class="item-productos-1">
+      <div class="card">
+        <img src="../img/pack-1.png" class="card-img-top img-fluid" alt="pack de conjugación verbal">
+        <div class="card-body">
+          <h5 class="card-title">¡Pack de conjugación verbal!</h5>
+          <p class="card-text">En este pack vas a encontrar infografías y actividades para imprimir junto a
+            conjugaciones en presente del indicativo. Cuenta con las conjugaciones de pronombres plurales y singulares
+            tanto del modo subjuntivo como del indicativo.</p>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-warning">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="item-productos-2">
+      <div class="card">
+        <img src="../img/pack-2.png" class="card-img-top img-fluid" alt="pack de pronombres verbales">
+        <div class="card-body">
+          <h5 class="card-title">¡Pack de pronombres personales!</h5>
+          <p class="card-text">En este pack vas a encontrar infografías y actividades para imprimir. Cuenta con todos
+            los pronombres personales formales y sus varintes según los diferents dialéctos del español.</p>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-warning">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="item-productos-3">
+      <div class="card">
+        <img src="../img/pack-3.png" class="card-img-top img-fluid" alt="pack de adjetivos posesivos">
+        <div class="card-body">
+          <h5 class="card-title">¡Pack de adjetivos posesivos!</h5>
+          <p class="card-text">En este pack vas a encontrar infografías y actividades para imprimir con adjetivos
+            posesivos de todos los pronombres, sus concordancias y su relación con los sustantivos. También su
+            diferencia con los pronombres posesivos. </p>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-warning">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="item-productos-4">
+      <div class="card">
+        <img src="../img/pack-4.png" class="card-img-top img-fluid" alt="pack de vocabulario de animales">
+        <div class="card-body">
+          <h5 class="card-title">¡Pack de vocabulario de animales! </h5>
+          <p class="card-text">¡Aprendé cómo se dicen tus animales favoritos en español! En este pack vas a encontrar
+            infografías y actividades para imprimir con imagénes didácticas sobre los diferentes animales que podés
+            encontrar en zonas turísticas de América.</p>
+          <div class="d-flex justify-content-center">
+            <button type="button" class="btn btn-warning">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
 
 <footer>
-    
-  <h2 class="titulos">Redes</h2>
-  <a href="http://instagram.com">instagram</a>
-  <a href="http://facebook.com">facebook</a>
-  <a href="https://ar.linkedin.com/">linkedin</a>
-  
-  </footer>
-
+  <section class="grid-container-2">
+    <div class="grid-item-uno">2</div>
+    <img class="footer-foto" src="../img/Logo Vamos spanish.png" alt="logo de vamos spanish">
+    <div class="grid-item-tres"></div>
+    <div class="grid-item-cuatro">
+      <h3>Nosotros</h3>
+      <p>Editora: Canela Visona</p>
+      <p>Diseño web: Silvio Carrizo y Canela Visona</p>
+    </div>
+    <div class="grid-item-cinco">
+      <h3>Contacto</h3>
+      <a href="https://www.facebook.com/tupagina" target="_blank"><i class="fab fa-facebook-f "></i></a>
+      <a href="https://twitter.com/tupagina" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.instagram.com/tupagina" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+    <div class="grid-item-seis">
+      <h3>Legal</h3>
+      <p>Términos y condiciones</p>
+      <p>Políticas de privacidad</p>
+      <p>Políticas de cookies</p>
+    </div>
+  </section>
+</footer>
 
 </html>

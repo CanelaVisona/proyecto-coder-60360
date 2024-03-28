@@ -1,0 +1,62 @@
+
+@import '_grids.scss';
+
+@import '_fonts.scss';
+
+
+
+$color-fondo: hsl(41, 69%, 82%);
+
+  
+header {
+  width: 100%;
+  
+}
+
+body {
+  background-color: $color-fondo;
+  height: 100%;
+ }
+
+
+footer {
+  height: 100%;
+}
+
+.accordion {
+  .accordion-button {
+    background-color: $color-fondo;
+    border: 3px solid #f3d0bc;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    font-size: 70%;
+  }
+
+  .accordion-item {
+    margin-bottom: 2%;
+    margin-top: 5%;
+  }
+}
+
+.card {
+  background-color: $color-fondo ;
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+#ejercicios-color{
+  background-color: white;
+} 
+
+
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+  .mb-3
+  {width: 50%;}

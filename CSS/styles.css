@@ -1,24 +1,185 @@
-body {
-  background-color: #ead6cd;
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin-top: 5%;
 }
-
-.flex-conteiner {
-  display: flex;
+.grid-container .imagen {
+  grid-column: 1/2;
+  grid-row: 2;
+  width: 80%;
+}
+.grid-container .item-titulo {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 10rem;
+  margin: 0 auto;
+  margin-top: 0;
+}
+.grid-container .grid-item {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+.grid-container .item-titulo-dos {
+  grid-column: 1/-1;
+  text-align: center;
+}
+.grid-container .btn {
+  grid-row: 2;
+  grid-column: 2;
+  justify-self: center;
   width: 100%;
-  height: 600px;
-  align-items: flex-end;
-  justify-content: flex-start;
+  height: 30%;
 }
 
-.foto-de-portada {
-  width: 900px;
-  justify-content: left;
-  flex-wrap: wrap;
+.item-carrusel {
+  grid-column: -4/-1;
+  grid-row: 3/4;
+  width: 70%;
+  justify-self: center;
 }
 
-.titulo {
-  margin-top: auto;
+.grid-container-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
   justify-content: center;
+  align-items: center;
+  margin-top: 15%;
+  margin-bottom: 2%;
+}
+.grid-container-2 .grid-item-cuatro,
+.grid-container-2 .grid-item-cinco,
+.grid-container-2 .grid-item-seis {
+  text-align: center;
+  font-size: 16px;
+}
+.grid-container-2 .grid-item-cuatro p,
+.grid-container-2 .grid-item-cinco p,
+.grid-container-2 .grid-item-seis p {
+  margin: 0;
+}
+
+.footer-foto {
+  width: 30%;
+  height: -20%;
+  grid-column: 2/3;
+  /* El botón está en la segunda columna */
+  justify-self: center;
+  /* Centra horizontalmente el botón dentro de su celda */
+  align-self: center;
+}
+
+.fab {
+  margin-right: 10px;
+  /* Espacio entre los iconos */
+}
+
+.contenedor-cursos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 50px;
+  padding: 20px;
+  margin-bottom: 8%;
+}
+.contenedor-cursos .item-cursos-0 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+.contenedor-cursos .item-cursos-1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-bottom: 0%;
+  text-align: center;
+}
+
+.container-productos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+}
+
+@font-face {
+  font-family: "genty";
+  src: url("../Font/GentyDemo-Regular.ttf");
+}
+@font-face {
+  font-family: "lora";
+  src: url("../Font/Lora-Italic-VariableFont_wght.ttf");
+}
+h1 {
+  font-family: "genty";
+}
+
+#spanish {
+  font-family: "lora";
+}
+
+.titulo-cursos {
+  font-family: "genty";
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 3%;
+}
+
+.card-text {
+  font-family: "Noto Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+header {
+  width: 100%;
+}
+
+body {
+  background-color: hsl(41, 69%, 82%);
+  height: 100%;
+}
+
+footer {
+  height: 100%;
+}
+
+.accordion .accordion-button {
+  background-color: hsl(41, 69%, 82%);
+  border: 3px solid #f3d0bc;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px 20px;
+  font-size: 70%;
+}
+.accordion .accordion-item {
+  margin-bottom: 2%;
+  margin-top: 5%;
+}
+
+.card {
+  background-color: hsl(41, 69%, 82%);
+  margin-left: 2%;
+  margin-bottom: 2%;
+}
+
+#ejercicios-color {
+  background-color: white;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mb-3 {
+  width: 50%;
 }
 
 /*# sourceMappingURL=styles.css.map */
