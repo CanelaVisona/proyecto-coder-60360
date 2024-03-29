@@ -1,25 +1,25 @@
 $fontSize: 16px;
-$icon-size: 24px; 
-$icon-spacing: 10px; 
+$icon-size: 24px;
+$icon-spacing: 10px;
 
 
-@media only screen and (min-width: 350px) and (max-width: 700px)  { 
-   
+@media only screen and (min-width: 350px) and (max-width: 700px) {
+
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr ;
+        grid-template-columns: 1fr;
         grid-template-rows: auto auto auto;
         max-width: 100%;
         max-height: 100%;
         margin-top: 5%;
 
-    
+
         .imagen {
             grid-column: 1/3;
             grid-row: 2;
             width: 20%;
         }
-    
+
         .item-titulo {
             grid-column: 1/3;
             grid-row: 1/2;
@@ -27,7 +27,7 @@ $icon-spacing: 10px;
             margin: 0 auto;
             margin-top: 0;
         }
-    
+
         .grid-item {
             grid-column: 1/3;
             grid-row: 2/3;
@@ -35,36 +35,36 @@ $icon-spacing: 10px;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto auto;
         }
-    
+
         .item-titulo-dos {
             grid-column: 1 / -1;
             text-align: center;
         }
-    
+
         .btn {
-            grid-row: 2; 
-            grid-column: 2; 
-            justify-self: center; 
+            grid-row: 2;
+            grid-column: 2;
+            justify-self: center;
             width: 100%;
             height: 3rem;
         }
-    
+
     }
-    
-        .item-carrusel {
-        
-            grid-column: -4/-1;
-            grid-row: 3/4;
-            width: 70%;
-            justify-self: center;
-            margin-top: 10%;
-        }
-        
-        }
+
+    .item-carrusel {
+
+        grid-column: -4/-1;
+        grid-row: 3/4;
+        width: 70%;
+        justify-self: center;
+        margin-top: 10%;
+    }
+
+}
 
 
-@media only screen and (min-width: 700px) and (max-width: 1100px)  { 
-   
+@media only screen and (min-width: 700px) and (max-width: 1300px) {
+
     .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
@@ -72,13 +72,13 @@ $icon-spacing: 10px;
         max-width: 100%;
         max-height: 100%;
         margin-top: 5%;
-    
+
         .imagen {
             grid-column: 1/2;
             grid-row: 2;
             width: 80%;
         }
-    
+
         .item-titulo {
             grid-column: 2/3;
             grid-row: 1/2;
@@ -86,7 +86,7 @@ $icon-spacing: 10px;
             margin: 0 auto;
             margin-top: 0;
         }
-    
+
         .grid-item {
             grid-column: 2/3;
             grid-row: 2/3;
@@ -94,211 +94,194 @@ $icon-spacing: 10px;
             grid-template-columns: 1fr 1fr 1fr;
             grid-template-rows: auto auto;
         }
-    
+
         .item-titulo-dos {
             grid-column: 1 / -1;
             text-align: center;
         }
-    
+
         .btn {
-            grid-row: 2; 
-            grid-column: 2; 
-            justify-self: center; 
+            grid-row: 2;
+            grid-column: 2;
+            justify-self: center;
             width: 100%;
             height: 3rem;
         }
-    
+
     }
-    
+
     .item-carrusel {
-    
+
         grid-column: -4/-1;
         grid-row: 3/4;
         width: 70%;
         justify-self: center;
     }
-    
-     }
 
-@media only screen and (min-width: 1100px) and (max-width: 1200px) {      
-.grid-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto;
-    max-width: 100%;
-    max-height: 100%;
-    margin-top: 5%;
+}
 
-    .imagen {
-        grid-column: 1/2;
-        grid-row: 2;
-        width: 80%;
-    }
-
-    .item-titulo {
-        grid-column: 2/3;
-        grid-row: 1/2;
-        font-size: 10rem;
-        margin: 0 auto;
-        margin-top: 0;
-    }
-
-    .grid-item {
-        grid-column: 2/3;
-        grid-row: 2/3;
+@media only screen and (min-width: 1100px) and (max-width: 1300px) {
+    .grid-container {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto auto;
-    }
+        grid-template-rows: auto auto auto;
+        max-width: 100%;
+        max-height: 100%;
+        margin-top: 5%;
 
-    .item-titulo-dos {
-        grid-column: 1 / -1;
-        text-align: center;
-    }
-
-    .btn {
-        grid-row: 2; 
-        grid-column: 2; 
-        justify-self: center; 
-        width: 100%;
-        height: 30%;
-    }
-}
-
-.item-carrusel {
-
-    grid-column: -4/-1;
-    grid-row: 3/4;
-    width: 70%;
-    justify-self: center;
-}
-}
-
-@media only screen and (max-width: 600px)  { 
- 
-.grid-container-2 {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: auto auto auto;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15%;
-    margin-bottom: 2%;
-
-    .grid-item-cuatro {
-        grid-column: 1;
-        grid-row:2 ;
-        text-align: center;
-        font-size: $fontSize;
-    }
-    .grid-item-cinco {
-        grid-column: 1;
-        grid-row: 3;
-        text-align: center;
-        font-size: $fontSize;
-    }
-    .grid-item-seis {
-        grid-column: 1;
-        grid-row: 4;
-        text-align: center;
-        font-size: $fontSize;
-
-        p {
-            margin: 0;
+        .imagen {
+            grid-column: 1/2;
+            grid-row: 2;
+            width: 80%;
         }
-     }
-     .footer-foto {
+
+        .item-titulo {
+            grid-column: 2/3;
+            grid-row: 1/2;
+            font-size: 10rem;
+            margin: 0 auto;
+            margin-top: 0;
+        }
+
+        .grid-item {
+            grid-column: 2/3;
+            grid-row: 2/3;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: auto auto;
+        }
+
+        .item-titulo-dos {
+            grid-column: 1 / -1;
+            text-align: center;
+        }
+
+        .btn {
+            grid-row: 2;
+            grid-column: 2;
+            justify-self: center;
+            width: 100%;
+            height: 30%;
+        }
+    }
+
+    .item-carrusel {
+
+        grid-column: -4/-1;
+        grid-row: 3/4;
+        width: 70%;
+        justify-self: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    .grid-container-2 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15%;
+        margin-bottom: 2%;
+
+        .grid-item-cuatro {
+            grid-column: 1;
+            grid-row: 2;
+            text-align: center;
+            font-size: $fontSize;
+        }
+
+        .grid-item-cinco {
+            grid-column: 1;
+            grid-row: 3;
+            text-align: center;
+            font-size: $fontSize;
+        }
+
+        .grid-item-seis {
+            grid-column: 1;
+            grid-row: 4;
+            text-align: center;
+            font-size: $fontSize;
+
+            p {
+                margin: 0;
+            }
+        }
+
+        .footer-foto {
+            width: 30%;
+            height: -20%;
+            grid-column: 1;
+            grid-row: 1;
+
+            justify-self: center;
+
+            align-self: center;
+        }
+
+
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1300px) {
+    .grid-container-2 {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15%;
+        margin-bottom: 2%;
+
+        .grid-item-cuatro,
+        .grid-item-cinco,
+        .grid-item-seis {
+            text-align: center;
+            font-size: $fontSize;
+
+
+            p {
+                margin: 0;
+            }
+        }
+
+    }
+
+
+
+    .footer-foto {
         width: 30%;
         height: -20%;
-        grid-column: 1;
-        grid-row: 1;
-      
+        grid-column: 2/3;
+
         justify-self: center;
-       
+
         align-self: center;
     }
-    
-    
-}
-}
 
-@media only screen and (min-width: 600px) and (max-width: 1200px) {  
-.grid-container-2 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    margin-top: 15%;
-    margin-bottom: 2%;
-
-    .grid-item-cuatro,
-    .grid-item-cinco,
-    .grid-item-seis {
-        text-align: center;
-        font-size: $fontSize;
-
-
-        p {
-            margin: 0;
-        }
-    }
-    
-}
-
-
-
-.footer-foto {
-    width: 30%;
-    height: -20%;
-    grid-column: 2/3;
-  
-    justify-self: center;
-   
-    align-self: center;
-}
-
-.fab {
-    margin-right: $icon-spacing;
-    /* Espacio entre los iconos */
-}
-
-}
-
-
-@media only screen and (min-width: 800px) and (max-width: 1200px) {  
-.contenedor-cursos {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr 1fr; 
-    margin-bottom: 8%;
-
-    .item-cursos-0 {
-        grid-column: 2/3;
-        grid-row: 1/2;
+    .fab {
+        margin-right: $icon-spacing;
+        /* Espacio entre los iconos */
     }
 
-    .item-cursos-1 {
-        grid-column: 2/3;
-        grid-row: 1/2; // Corrección: utiliza grid-row en lugar de grid-column
-        margin-bottom: 0%;
-        text-align: center;
-    }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 800px) {  
+
+@media only screen and (min-width: 800px) and (max-width: 1300px) {
     .contenedor-cursos {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 1fr 1fr; 
-        
-    
+        grid-template-rows: 1fr 1fr;
+        margin-bottom: 8%;
+
         .item-cursos-0 {
             grid-column: 2/3;
             grid-row: 1/2;
         }
-    
+
         .item-cursos-1 {
             grid-column: 2/3;
             grid-row: 1/2; // Corrección: utiliza grid-row en lugar de grid-column
@@ -306,55 +289,77 @@ $icon-spacing: 10px;
             text-align: center;
         }
     }
-    
 
- }
+    @media only screen and (min-width: 800px) and (max-width: 1300px) {
+        .contenedor-cursos {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 1fr 1fr;
+
+
+            .item-cursos-0 {
+                grid-column: 2/3;
+                grid-row: 1/2;
+            }
+
+            .item-cursos-1 {
+                grid-column: 2/3;
+                grid-row: 1/2; // Corrección: utiliza grid-row en lugar de grid-column
+                margin-bottom: 0%;
+                text-align: center;
+            }
+        }
+
+
+    }
 
 }
 
 
-@media only screen and (min-width: 350px) and (max-width: 800px) {  
+@media only screen and (min-width: 350px) and (max-width: 800px) {
     .contenedor-cursos {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto auto auto auto  ; 
-        
-    
+        grid-template-rows: auto auto auto auto;
+
+
         .item-cursos-0 {
             grid-column: 1/2;
             grid-row: 1/2;
         }
-    
-        .item-cursos-4   {
+
+        .item-cursos-4 {
             grid-column: 1/2;
-            grid-row: 2/3; 
+            grid-row: 2/3;
             margin-bottom: 10%;
             text-align: center;
         }
+
         .item-cursos-5 {
             grid-column: 1/2;
-            grid-row: 3/4; 
+            grid-row: 3/4;
             margin-bottom: 10%;
             text-align: center;
         }
+
         .item-cursos-6 {
             grid-column: 1/2;
-            grid-row: 4/5; 
+            grid-row: 4/5;
             margin-bottom: 10%;
             text-align: center;
         }
     }
-    
-
- }
 
 
- 
- 
+}
 
 
+@media only screen and (min-width: 600px) and (max-width: 1300px) { 
 .container-productos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto auto;
 }
+}
+
+
